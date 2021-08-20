@@ -35,7 +35,12 @@ class AccountController extends Controller {
     }
 
     public function profileAction(){
-        $this->view->render('Профиль');
+        $id = $_SESSION['account']['id'];
+        $product = $this->model->myWin($id);
+        $vars = [
+            'product' => $product,
+        ];
+        $this->view->render('Профиль',$vars);
     }
 
     public function addAction(){

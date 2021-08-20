@@ -202,4 +202,23 @@ class Account extends Model {
             echo "огонь";
         } echo "666";
     }
+
+    public function myWin($id) {
+       $get = $this->db->getRows("SELECT
+          `auctions`.`id`,
+          `auctions`.`product`,
+          `auctions`.`bet`,
+          `auctions`.`end_date`,
+          `auctions`.`winer`
+        FROM `auctions`
+          INNER JOIN `users`
+            ON `auctions`.`winer` = `users`.`id`
+        WHERE `auctions`.`winer` = ?", [$id]);
+       return $get;
+//       return $result = array(
+//           'product'=> $get['product'],
+//           'bet'=> $get['bet'],
+//           'end_date'=> $get['end_date']
+//       );
+    }
 }
