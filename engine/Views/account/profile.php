@@ -60,11 +60,11 @@
                                 <?php foreach ($product as $item): ?>
                                 <div class="card shadow mb-3">
                                     <!-- Card Header - Accordion -->
-                                    <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                                    <a href="#collapseCardExample-<?php echo $item['id']; ?>" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                                         <h6 class="m-0 font-weight-bold text-primary"><?php echo $item['product']; ?></h6>
                                     </a>
                                     <!-- Card Content - Collapse -->
-                                    <div class="collapse show" id="collapseCardExample" style="">
+                                    <div class="collapse" id="collapseCardExample-<?php echo $item['id']; ?>" style="display: ">
                                         <div class="card-body">
                                             Аукцион окончен <?php echo $item['end_date']; ?>, Вы победили со ставкой <strong><?php echo $item['bet']; ?></strong> рублей!
                                         </div>
