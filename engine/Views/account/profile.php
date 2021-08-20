@@ -64,7 +64,7 @@
                                         <h6 class="m-0 font-weight-bold text-primary"><?php echo $item['product']; ?></h6>
                                     </a>
                                     <!-- Card Content - Collapse -->
-                                    <div class="collapse" id="collapseCardExample-<?php echo $item['id']; ?>" style="display: ">
+                                    <div class="collapse" id="collapseCardExample-<?php echo $item['id']; ?>" >
                                         <div class="card-body">
                                             Аукцион окончен <?php echo $item['end_date']; ?>, Вы победили со ставкой <strong><?php echo $item['bet']; ?></strong> рублей!
                                         </div>
