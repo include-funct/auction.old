@@ -24,7 +24,7 @@
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                        <label class="custom-control-label" for="customCheck">Запомнить меня</label>
                       </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-user btn-block">
@@ -34,10 +34,10 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="forgot-password.html">Забыли пароль?</a>
+                    <a class="small" href="/account/recovery">Забыли пароль?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="register.html">Регистрация</a>
+                    <a class="small" href="/account/register">Регистрация</a>
                   </div>
                 </div>
               </div>

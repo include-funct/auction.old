@@ -27,10 +27,10 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="/account/register">Create an Account!</a>
+                    <a class="small" href="/account/register">Регистрация!</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="/account/login">Already have an account? Login!</a>
+                    <a class="small" href="/account/login">У Вас есть аккаунт? Войти!</a>
                   </div>
                 </div>
               </div>
